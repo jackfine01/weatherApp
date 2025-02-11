@@ -45,14 +45,15 @@ function callWeatherData(city){
 };
 
 let search = 'washington';
-const searchInput = document.getElementById('searchbar')
+let weatherData = callWeatherData(search);
+console.log(weatherData[0])
+const searchInput = document.getElementById('searchBar')
 searchInput.addEventListener('input', () => {
     search = searchInput.value;
     console.log(search)
 })
 
-const sub = document.getElementById('sub');
-console.log(sub);
-sub.addEventListener('click', () => {
-    callWeatherData(citySub);
+const getWeatherButton = document.getElementById('getWeatherButton');
+getWeatherButton.addEventListener('click', () => {
+    callWeatherData(search);
 })
