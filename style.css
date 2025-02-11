@@ -1,0 +1,13 @@
+.card, .headercard{
+    border: 1px solid black;
+    height: 20px;
+    width: 100px;
+}
+
+#header{
+    display: flex;
+}
+
+#main{
+    display: flex;
+}
