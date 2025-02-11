@@ -43,3 +43,16 @@ function callWeatherData(city){
         return weatherData;
     })
 };
+
+let search = 'washington';
+const searchInput = document.getElementById('searchbar')
+searchInput.addEventListener('input', () => {
+    search = searchInput.value;
+    console.log(search)
+})
+
+const sub = document.getElementById('sub');
+console.log(sub);
+sub.addEventListener('click', () => {
+    callWeatherData(citySub);
+})
